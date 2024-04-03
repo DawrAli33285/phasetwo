@@ -21,11 +21,11 @@ import {
     MicrosoftLoginButton,
     TwitterLoginButton
   } from "react-social-login-buttons";
-import { useDispatch } from 'react-redux';
+  import { useDispatch } from 'react-redux';
   const REDIRECT_URI = "http://localhost:3000/account/login";
-
-export default function SignIn() {
-  alert("NEWCODE")
+  alert("NOW")
+  
+  export default function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
