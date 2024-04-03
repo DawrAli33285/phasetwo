@@ -1,0 +1,57 @@
+.jobListingContainer{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+}
+.jobs-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-inline: 12px;
+
+}
+@media(min-width:900px) {
+    .jobListingContainer{
+        grid-template-columns: 30% 70%;
+        gap: 0;
+    }
+    .jobs-container{
+        grid-template-columns: repeat(2,1fr);
+        padding-inline: 15px;
+        gap: 20px;
+    }
+}
+.crossline{
+    position: relative;
+    padding-block: 20px;
+}
+.crossline::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #d1d1d1; 
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.dot{
+    position: relative;
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #d5dfdd;
+}
+
+.detail-body-gird{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;    
+}
+
+@media (min-width:1024px){
+    .detail-body-gird{
+        grid-template-columns: 60% 40%;
+        width: 100%;
+    }
+}
+

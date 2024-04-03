@@ -1,0 +1,48 @@
+.input-area {
+    background: #fff;
+    border: 1px solid rgba(0, 167, 172, .12);
+    border-radius: 5px;
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: .35s;
+}
+
+.input-area img {
+    width: 20px; /* Adjust the width of the image icon */
+    margin-right: 10px; /* Add margin between image and input field */
+}
+
+.input-area input {
+    border: none;
+    background: none;
+    flex: 1;
+}
+
+.input-area::before {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #d9d9d9;
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+.image-picker-text{
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #00a7ac;
+}
+.textarea {
+    border: 1px solid rgba(0, 167, 172, 0.12); /* Same border style as other inputs */
+    border-radius: 5px; /* Same border radius as other inputs */
+    padding: 10px; /* Adjust padding as needed */
+    height: 100%; /* Adjust height to match other inputs */
+    resize: vertical; /* Allow vertical resizing */
+}

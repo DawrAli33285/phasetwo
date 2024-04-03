@@ -1,0 +1,15 @@
+.menu-drawer {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .menu-drawer.open {
+    left: 0; /* Slide in from the left */
+    opacity: 1; /* Make visible */
+  }

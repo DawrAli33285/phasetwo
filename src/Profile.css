@@ -1,0 +1,17 @@
+@media (max-width: 1950px) and (min-width: 900px) {
+    .bookmarks {
+        width: 100%;
+    }
+    .main-bookmark{
+        padding-inline: 10px;
+    }
+
+    .change{
+        bottom: 20px !important;
+    }
+    .icon{
+        top: 10px !important;
+    }
+
+}
+
