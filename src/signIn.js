@@ -25,6 +25,7 @@ import { useDispatch } from 'react-redux';
   const REDIRECT_URI = "http://localhost:3000/account/login";
 
 export default function SignIn() {
+  alert("NEWCODE")
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -129,7 +130,7 @@ toastr.error(loginres?.payload?.error)
                     </div> */}
                      <LoginSocialMicrosoft
           ref={microsoftRef}
-          client_id={process.env.REACT_APP_MICROSOFT_APP_ID || ""}
+          client_id="384c5e54-47cf-42e5-a3e6-6ad66ba6fd0e"
           redirect_uri={REDIRECT_URI}
           onLoginStart={onLoginStart}
           onLogoutSuccess={onLogoutSuccess}
@@ -148,7 +149,7 @@ toastr.error(loginres?.payload?.error)
 
         <LoginSocialFacebook
           ref={facebookRef}
-          appId={"431451242017946"}
+          appId={"722882353366574"}
           onLoginStart={onLoginStart}
           onLogoutSuccess={onLogoutSuccess}
           onResolve={({ provider, data }) => {
