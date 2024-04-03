@@ -23,8 +23,7 @@ import {
   } from "react-social-login-buttons";
   import { useDispatch } from 'react-redux';
   const REDIRECT_URI = "http://localhost:3000/account/login";
-  alert("NOW")
-  
+
   export default function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -130,7 +129,7 @@ toastr.error(loginres?.payload?.error)
                     </div> */}
                      <LoginSocialMicrosoft
           ref={microsoftRef}
-          client_id="384c5e54-47cf-42e5-a3e6-6ad66ba6fd0e"
+          client_id="e3074202-1ef3-4073-b964-8a39b3dd413e"
           redirect_uri={REDIRECT_URI}
           onLoginStart={onLoginStart}
           onLogoutSuccess={onLogoutSuccess}
@@ -193,7 +192,7 @@ toastr.error(loginres?.payload?.error)
 
         <LoginSocialLinkedin
           ref={linkedinRef}
-          client_id={process.env.REACT_APP_LINKEDIN_CLIENT|| "86pzqgprf0w2kj"}
+          client_id={"86pzqgprf0w2kj"}
           client_secret={process.env.REACT_APP_LINKEDIN_SECRET|| "a3VmR9Do5KMWGgqG"}
           redirect_uri="https://jobsfrontend-be4cgrqi6-ali-bukharis-projects.vercel.app"
           onLoginStart={onLoginStart}
@@ -215,8 +214,8 @@ toastr.error(loginres?.payload?.error)
         
         <LoginSocialTwitter
           ref={twitterRef}
-          client_id={process.env.REACT_APP_TWITTER_API_KEY || ""}
-          client_secret={process.env.REACT_APP_TWITTER_APP_SECRET || ""}
+          client_id={"b3FtdWZEbHYtSjJ0TUdzdkd2Z2g6MTpjaQ"}
+          client_secret={"pZrZEfnGwhAUyVM-_eKq4pe330YepQN0niKbp7pABH-IM_rF9z"}
           redirect_uri={REDIRECT_URI}
           onLoginStart={onLoginStart}
           onLogoutSuccess={onLogoutSuccess}
